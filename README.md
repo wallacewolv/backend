@@ -9,16 +9,16 @@
   - [Pré-requisitos](#pré-requisitos)
   - [Instalação](#instalação)
   - [Uso](#uso)
-  - [Licença](#licença)
-  - [Contato](#contato)
+  <!-- - [Licença](#licença)
+  - [Contato](#contato) -->
 - [English](#english)
   - [Technologies Used](#technologies-used)
   - [Features](#features)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
   - [Usage](#usage)
-  - [License](#license)
-  - [Contact](#contact)
+  <!-- - [License](#license)
+  - [Contact](#contact) -->
 
 ---
 
