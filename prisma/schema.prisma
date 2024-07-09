@@ -19,7 +19,7 @@ model Trip {
   created_at   DateTime @default(now())
 
   participants Participant[]
-  activies     Activity[]
+  activities   Activity[]
   links        Link[]
 
   @@map("trips")
