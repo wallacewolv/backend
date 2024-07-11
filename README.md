@@ -34,8 +34,35 @@
 
 ## Funcionalidades
 
-- **Criação de Viagens**: Permite aos usuários criar e gerenciar viagens.
-- **Grupos de Amigos**: Permite aos usuários adicionar amigos e organizar viagens em grupos.
+- **Confirmar participação** ***(Método GET)***: 
+    - params: participantId
+- **Confirmar viagem** ***(Método GET)***: 
+    - params: tripId
+- **Criar atividade** ***(Método POST)***: 
+    - params: tripId
+    - body: title e occurs_at
+- **Criar convite** ***(Método POST)***: 
+    - params: tripId
+    - body: email
+- **Criar link** ***(Método POST)***: 
+    - params: tripId
+  - body: title e url
+- **Criar viagem** ***(Método POST)***: 
+    - params: tripId
+    - body: destination, starts_at, ends_at, owner_name, owner_email e emails_to_invite
+- **Obter atividades** ***(Método GET)***: 
+    - params: tripId
+- **Obter links** ***(Método GET)***: 
+    - params: tripId
+- **Obter participante** ***(Método GET)***: 
+    - params: participantId
+- **Obter participantes** ***(Método GET)***: 
+    - params: tripId
+- **Obter detalhes da viagem** ***(Método GET)***: 
+    - params: tripId
+- **Atualizar viagem** ***(Método PUT)***: 
+    - params: tripId
+    - body: destination, starts_at e ends_at
 
 ## Pré-requisitos
 
@@ -99,8 +126,35 @@ npm run dev
 
 ## Features
 
-- **Trip Creation**: Allows users to create and manage trips.
-- **Friend Groups**: Allows users to add friends and organize trips in groups.
+- **Confirm participant** ***(Method GET)***: 
+    - params: participantId
+- **Confirm trip** ***(Method GET)***: 
+    - params: tripId
+- **Create activity** ***(Method POST)***: 
+    - params: tripId
+    - body: title e occurs_at
+- **Create invite** ***(Method POST)***: 
+    - params: tripId
+    - body: email
+- **Create link** ***(Method POST)***: 
+    - params: tripId
+  - body: title e url
+- **Create trip** ***(Method POST)***: 
+    - params: tripId
+    - body: destination, starts_at, ends_at, owner_name, owner_email e emails_to_invite
+- **Get activities** ***(Method GET)***: 
+    - params: tripId
+- **Get links** ***(Method GET)***: 
+    - params: tripId
+- **Get participant** ***(Method GET)***: 
+    - params: participantId
+- **Get participants** ***(Method GET)***: 
+    - params: tripId
+- **Get trip details** ***(Method GET)***: 
+    - params: tripId
+- **Update trip** ***(Method PUT)***: 
+    - params: tripId
+    - body: destination, starts_at e ends_at
 
 ## Prerequisites
 
