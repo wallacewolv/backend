@@ -1,3 +1,4 @@
+import { ClientError } from '@/errors/client-error';
 import { dayjs } from '@/lib/dayjs';
 import { prisma } from '@/lib/prisma';
 import { FastifyInstance } from 'fastify';
@@ -22,7 +23,7 @@ export async function getLinks(app: FastifyInstance) {
         });
 
         if (!trip) {
-            throw new Error('Trip not found');
+            throw new ClientError('Trip not found');
         }
 
 

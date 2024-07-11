@@ -1,3 +1,4 @@
+import { ClientError } from '@/errors/client-error';
 import { dayjs } from '@/lib/dayjs';
 import { getMailClient } from '@/lib/mail';
 import { prisma } from '@/lib/prisma';
@@ -30,7 +31,7 @@ export async function confirmTrip(app: FastifyInstance) {
         });
 
         if (!trip) {
-            throw new Error('trip not found.');
+            throw new ClientError('trip not found.');
         }
 
         // Se a viagem ja foi confirmada, redireciona para o front
